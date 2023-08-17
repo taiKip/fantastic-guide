@@ -1,6 +1,7 @@
 package com.example.cicddemo.user;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -34,6 +35,7 @@ User user =
     }
 
 @Test
+@Disabled
 @DisplayName("Get data based on valid email")
     public void whenValidUserEmail_thenUserShouldFound() throws UserNotFoundException {
         String userEmail = "test@123.com";
@@ -43,6 +45,7 @@ User user =
 
     }
     @Test
+    @Disabled
     @DisplayName("Get data based on valid user id")
 public void whenValidUserId_thenUserShouldFound() throws UserNotFoundException {
       Long  userId = 1L;

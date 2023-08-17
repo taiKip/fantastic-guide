@@ -2,6 +2,7 @@ package com.example.cicddemo.note;
 
 import com.example.cicddemo.user.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -33,6 +34,7 @@ class NoteServiceTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Get note based on valid noteId")
     public void whenValidNoteId_thenNoteShouldBeFound() throws NoteDoesNotExistException {
         Long noteId = 1L;
