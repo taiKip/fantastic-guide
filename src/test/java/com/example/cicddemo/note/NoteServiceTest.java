@@ -34,7 +34,6 @@ class NoteServiceTest {
     }
 
     @Test
-    @Disabled
     @DisplayName("Get note based on valid noteId")
     public void whenValidNoteId_thenNoteShouldBeFound() throws NoteDoesNotExistException {
         Long noteId = 1L;

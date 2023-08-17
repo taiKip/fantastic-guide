@@ -35,7 +35,6 @@ User user =
     }
 
 @Test
-@Disabled
 @DisplayName("Get data based on valid email")
     public void whenValidUserEmail_thenUserShouldFound() throws UserNotFoundException {
         String userEmail = "test@123.com";
@@ -45,7 +44,6 @@ User user =
 
     }
     @Test
-    @Disabled
     @DisplayName("Get data based on valid user id")
 public void whenValidUserId_thenUserShouldFound() throws UserNotFoundException {
       Long  userId = 1L;
